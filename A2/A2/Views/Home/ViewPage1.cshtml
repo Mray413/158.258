@@ -1,0 +1,300 @@
+﻿@{
+    Layout = "~/Views/Shared/_LayoutPage2.cshtml";
+}
+<body>
+    <!--导航-->
+    <header>
+        <div class="nav-header">
+            <p class="navbar-brand">YI Nationality</p>
+        </div>
+        <ul>
+            <li><a class="one" href="/Home/ViewPage0">Home</a></li>
+            <li><a class="two" href="/Home/ViewPage1"> Traditional Culture</a></li>
+            <li><a class="three" href="/Home/ViewPage2">Natural Scenery</a></li>
+            <li>@Html.ActionLink("Suggestion", "Index", "Feedbacks")</li>
+        </ul>
+    </header>
+    <!--背景-->
+    <div class="background">
+        <img src="~/Content/Images/1/Home03.jpg">
+    </div>
+    <!--图片-->
+    <div class="container">
+        <div class="card">
+            <div class="img">
+                <a href="javascript:;" data-tab="gongyilink">
+                    <img src="~/Content/Images/2/Culture1.jpg" width="257" height="182">
+                </a>
+            </div>
+            <div class="content">
+                <h2>Featured Craftsmanship</h2>
+                <p>
+                    &emsp;&emsp;There are many types of Yi handicrafts, with exquisite and unique workmanship. Mainly include lacquerware, silverware,
+                    costume art, sculpture, painting art, etc. These handicrafts embody the national sentiment of the Yi people for
+                    generations and are the crystallization of wisdom that has been connected with the blood of the Yi people for thousands
+                    of years.
+                </p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="img">
+                <a href="javascript:;" data-tab="festivallink">
+                    <img src="~/Content/Images/2/Culture2.jpg" width="257" height="182">
+                </a>
+            </div>
+            <div class="content">
+                <h2>Festival</h2>
+                <p>
+                    &emsp;&emsp;The Yi people have many unique customs. The main festivals include the Yi New Year, Dancing Festival, Painted Face
+                    Festival, Torch Festival, Tiger Festival, Dragon Sacrifice Festival (praying for rain), etc. During these festivals, the
+                    Yi people wear traditional costumes, sing and dance to celebrate, taste traditional food, worship their ancestors, and
+                    pray for blessings.
+                </p>
+            </div>
+        </div>
+    </div>
+    <!--图片-->
+    <div class="container">
+        <div class="card">
+            <div class="img">
+                <a href="javascript:;" data-tab="foodlink">
+                    <img src="~/Content/Images/2/Culture3.jpg" width="257" height="182">
+                </a>
+            </div>
+            <div class="content">
+                <h2>Food Culture</h2>
+                <p>
+                    &emsp;&emsp;The Yi people grow buckwheat, barley and wheat. Mainly corn.The livestock industry
+                    is mainly based on pigs and sheep, and cattle, horses, chickens, etc. are also raised. The Yi people mostly eat
+                    buckwheat cakes, rice, and corn rice. Both pork and mutton like to be made into large pieces of meat, and they like to
+                    drink sauerkraut soup made with broth.
+                </p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="img">
+                <a href="javascript:;" data-tab="clothlink">
+                    <img src="~/Content/Images/2/Culture4.jpg" width="257" height="182">
+                </a>
+            </div>
+            <div class="content">
+                <h2>Ethnic Clothing</h2>
+                <p>
+                    &emsp;&emsp;The clothing styles of the Yi people are unique and come in nearly a hundred varieties. The climate in the living area
+                    does not change much throughout the seasons, so the Yi costumes are not very seasonal. The Yi costumes are rich in
+                    color, mainly black, red, and yellow, and are decorated with a large number of silver products and embroidery.
+                </p>
+            </div>
+        </div>
+    </div>
+    <!--详细介绍-->
+    <!--饮食文化-->
+    <div data-tab="foodlink" class="food">
+        <div class="liyi">
+            <h2>Food Culture</h2>
+            <h3>&emsp;---dining etiquette</h3>
+            <p>
+                &emsp;&emsp;The Yi people pay attention to the distinction between men and women when dining, and the elders and the younger ones
+                sit in the most honorable position. When entertaining guests, let the guests or elders eat the good wine and food first.
+                At large banquets, male guests and female guests sit at two tables. When eating, everyone sits in a circle or a row,
+                with a dustpan of rice, a wooden plate of meat and a wooden basin of soup and vegetables placed in the middle.
+            </p>
+        </div>
+        <div class="shiwu">
+            <h3>&emsp;---eating habits</h3>
+            <p>
+                &emsp;&emsp;The Yi people attach great importance to wine in their daily activities and social activities. Whether they are visiting
+                relatives and friends, attending weddings, or visiting patients, they must bring wine with them. When a guest comes to
+                your home, you should first pour him a glass of wine. Although the Yi people love to drink, they are not alcoholics.
+                Drinking in circles is the most orthodox drinking culture of the Yi people: people sit in a circle on the ground, pass
+                wine glasses to each other, and drink one after another. Ganggan wine is a specialty wine of the Yi people.
+                The Yi people have complicated attitudes towards meat. As long as a person participates in or sees the process of
+                slaughtering and hunting, the organizer of the slaughter or hunting will invite him to his home to eat meat that day.
+                But eating too much meat will lead to ridicule because they think meat should be given to children.
+                Yi people rarely cook vegetables. They like to boil vegetables or make them into pickled vegetables.
+            </p>
+        </div>
+        <div class="foodpicture">
+            <figure>
+                <div>
+                    <img src="~/Content/Images/2/Food4.jpg" alt="" />
+                    <img src="~/Content/Images/2/Food5.jpg" alt="" />
+                    <img src="~/Content/Images/2/Food6.jpg" alt="" />
+                    <img src="~/Content/Images/2/Food1.jpg" alt="" />
+                    <img src="~/Content/Images/2/Food2.jpg" alt="" />
+                    <img src="~/Content/Images/2/Food3.jpg" alt="" />
+                </div>
+            </figure>
+        </div>
+    </div>
+    <!--服饰文化-->
+    <div data-tab="clothlink" class="Clothing">
+        <div class="clothing">
+            <h2>Ethnic Clothing</h2>
+            <h3>men's clothing--&emsp;</h3>
+            <p>
+                Yi men dress differently in different regions. Men in the "Zhe" dialect area wear star-chasing trousers that are wide
+                and narrow at the bottom, men in the "Shengjia" dialect area wear medium-leg trousers, and men in the "Yinuo" dialect
+                area wear large-leg trousers. Men wear a "headband" on their heads, which is a kind of hat made of cloth. The wrapping
+                methods are different in different regions, but the shapes are similar. Men in some areas also wear silver earrings on
+                their left ears. Men in almost all regions wear the Hero's Day, a traditional knife belt.
+            </p>
+            <h3>women's clothing--&emsp;</h3>
+            <p>
+                Young and middle-aged women all wear dark blue homespun cloth to wrap their heads, and their tops have short blue front
+                lapels, the back lapels are longer than the front lapels, the round collars are inlaid with striped patterns of five
+                colors, and the sleeves are bordered with three-color patterns;Young women wear green cloth headbands and silver necklaces with many silver bubbles. Their tops are in various colors
+                of women's clothing. The round collar is inlaid with lace of different colors, and the waist is tied with blue patterns.
+                When getting married, women will also wear "Zhalahuo" (chest ornament) and "Woga" (back ornament). The chest ornament is
+                generally 1 meter long and is composed of 6 to 8 independent pieces of jewelry. It is usually made of about 10 pounds of
+                sterling silver.
+            </p>
+            <h3>children's clothing--&emsp;</h3>
+            <p>
+                There are two main types of traditional children's hats worn by Yi babies: cockscomb hats and tiger-shaped hats. Some
+                plant patterns are embroidered on the front of the cockscomb hat, symbolizing abundant food and clothing, health and
+                longevity; the back of the hat is shaped like a chicken tail.Boys' traditional clothing is roughly the
+                same as that of adults, with some having a piece of red cloth sewn on the trousers. Girls wear children's skirts with a
+                straight top and pleated bottom.
+            </p>
+        </div>
+        <div class="fushipicture">
+            <figure>
+                <div>
+                    <img src="~/Content/Images/2/Clothing2.jpg" alt="" />
+                    <img src="~/Content/Images/2/Clothing1.jpg" alt="" />
+                    <img src="~/Content/Images/2/Clothing3.jpg" alt="" />
+                    <img src="~/Content/Images/2/Clothing4.jpg" alt="" />
+                    <img src="~/Content/Images/2/Clothing5.jpg" alt="" />
+                </div>
+            </figure>
+        </div>
+
+    </div>
+    <!--工艺-->
+    <div data-tab="gongyilink" class="Gongyi">
+        <div class="gongyi">
+            <h2>Featured Craftsmanship</h2>
+            <h3>&emsp;--lacquerware</h3>
+            <p>
+                Lacquer ware is mainly made of leather, wood, bamboo, and horn, and its shapes include basins, helmets, plates, etc. The
+                decorative methods of lacquerware mainly include painting, carving, lacquer piling, and inlaying. Lacquer painting is
+                the main method. The composition is mainly composed of three basic aspects: points, lines, and surfaces. When painting,
+                the painter first uses a wide stroke to draw thick lines to divide the surface and outline the pattern, then uses a
+                small wooden pen or brush to draw thin lines, add patterns and dots, and finally fill in the surface. Its decorative
+                patterns mostly use animals and plants, production tools and the sun, moon and stars as patterns. The patterns are
+                single pattern, two-sided continuous or four-sided continuous pattern, and the colors are mainly red, yellow and black.
+            </p>
+            <h3>&emsp;--silverware</h3>
+            <p>
+                The Yi silverware processing technology is very high and is widely used. The patterns of silverware are mostly based on
+                animals, plants, sun, moon and stars. Among the Yi silverware, there are many drinking utensils and the most exquisite
+                workmanship and shape. Among them, the Yi wine pots called "Moye" and "Sarebo" are unique. Their shapes are round or
+                round, with a round or bird-shaped middle and a cylindrical or spire-shaped neck. When smoking, drink from the small
+                tube on the side of the pot. The whole pot is completely closed except for a small hole at the bottom. The wine is
+                poured from the bottom hole. Except for pouring the wine into the hole, it is usually placed upright.
+            </p>
+            <h3>&emsp;--Sculpture</h3>
+            <p>
+                There are mainly two types of carving: wood carving and stone carving. The woodcarving skills of the Yi people are
+                mainly reflected in the eaves of houses, wooden cabinets, and interior siding. The patterns are mainly animals and
+                plants. The technique includes both negative and positive carving. Stone carvings are mostly found on pillar stones,
+                stone mortars, etc. There are many carvings of peacocks, eagles, tigers, suns, moons, etc., showing a strong sense of
+                nature worship and totem worship.
+            </p>
+        </div>
+        <div class="gongyipicture">
+            <figure>
+                <div>
+                    <img src="~/Content/Images/2/Gongyi2.jpg" alt="" />
+                    <img src="~/Content/Images/2/Gongyi1.jpg" alt="" />
+                    <img src="~/Content/Images/2/Gongyi3.jpg" alt="" />
+                    <img src="~/Content/Images/2/Gongyi4.jpg" alt="" />
+                    <img src="~/Content/Images/2/Gongyi5.jpg" alt="" />
+                </div>
+            </figure>
+        </div>
+    </div>
+    <!--节日-->
+    <div data-tab="festivallink" class="Festival">
+        <h2>Festival——</h2>
+        <div class="festival1">
+            <img src="~/Content/Images/2/Festival4 .jpg">
+            <h2>Torch Festival</h2>
+            <p>
+                <strong>Date:</strong><br />&emsp;&emsp;The twenty-fourth day of the sixth lunar month.
+                <br /><strong>Activities:</strong><br>&emsp;&emsp;Each village slaughters cattle and sheep and shares them collectively, prepares wine and meat to worship the ancestors,
+                the elders light the sacred fire, and the high priest chants sutras and worships the fire. On the last night, everyone
+                sang and danced around the bonfire.
+            </p>
+        </div>
+        <div class="festival2">
+            <img src="~/Content/Images/2/Festival1.jpg">
+            <h2>Yi calendar Year</h2>
+            <p>
+                <strong>Date：</strong><br />&emsp;&emsp;One day from October 16th to October 30th in the lunar calendar.<br />
+                <strong>Activities：</strong><br />
+                &emsp;&emsp;Before the New Year, every household must chop three days' worth of firewood and prepare enough rice, noodles, salt and
+                other food. On the morning before the Chinese New Year, every household has to clean their houses and courtyards. During
+                the Chinese New Year, every household will kill a pig and use its internal organs to determine the owner's fortune for
+                the coming year.
+            </p>
+        </div>
+        <div class="festival3">
+            <img src="~/Content/Images/2/Festival3.jpg">
+            <h2>Painted Face Festival</h2>
+            <p>
+                <strong>Date：</strong><br />&emsp;&emsp;The first Snake Day in February of each year on the lunar calendar.<br />
+                <strong>Origin：</strong><br />&emsp;&emsp;Ancient ancestors used pot ashes to smear their faces to drive away evil spirits.<br />
+                <strong>Activities：</strong><br />&emsp;&emsp;During the festival, Bimo (priest of the Yi ethnic group) first leads the whole village in holding sacrificial
+                activities. Young men and women wipe each other's faces with pot ashes. The darker the face is, the more good luck and
+                happiness it will bring.
+            </p>
+
+        </div>
+        <div class="festival4">
+            <img src="~/Content/Images/2/Festival2.jpg">
+            <h2>Tiger Festival</h2>
+            <p>
+                <strong>Date：</strong><br />&emsp;&emsp;Every year from the eighth to the fifteenth day of the first lunar month.<br />
+                <strong>Origin：</strong><br />&emsp;&emsp;"Luo Luopu" is one of the many branches of the Yi people. In the Yi language, "Luo Luopu" means "tiger tribe" or "tiger
+                people", so they believe that they are descendants of tigers and that tigers gave them It brings auspiciousness and
+                happiness to life, so every year in the first month they follow the folk custom of Tiger Dance.<br />
+                <strong>Activities：</strong><br />&emsp;&emsp;Do the tiger dance.
+            </p>
+        </div>
+    </div>
+    <!--页脚-->
+    <footer>
+        <div class="introduceL">
+            <p class="intL1">
+                Producer：YuXin Zhang
+            </p>
+            <p class="intL2">
+                <a href="tel:XXXXXX">Contact information:XXXXXX</a>
+            </p>
+
+            <p class="intL3">
+                <a href="mailto:">E-mail：Have_a_nice_day@qq.com</a>
+            </p>
+        </div>
+        <div class="introduceR">
+            <p class="intR1"><a href="/Home/ViewPage0">Home</a></p>
+            <p class="intR1"><a href="/Home/ViewPage1">Traditional Culture</a></p>
+            <p class="intR1"><a href="/Home/ViewPage2">Natural Scenery</a></p>
+            <p class="intR1">@Html.ActionLink("Suggestion", "Index", "Feedbacks")</p>
+        </div>
+    </footer>
+</body>
+<!--跳转-->
+<script type="text/javascript">
+    document.querySelectorAll('a').forEach(function (el) {
+        el.addEventListener('click', function () {
+            var dHeight = document.documentElement.clientHeight;
+            var target = document.querySelector('div[data-tab=' + this.getAttribute('data-tab') + ']')
+            target.height = dHeight + "px";
+            target.scrollIntoView(false);
+        })
+    })
+</script>
+

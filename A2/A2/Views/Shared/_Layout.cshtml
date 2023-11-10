@@ -1,0 +1,177 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - 我的 ASP.NET 应用程序</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-dark">
+        <div class="container">
+            @Html.ActionLink("Yi Nationality", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" title="切换导航" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li>@Html.ActionLink("Types of Suggesion", "Index", "FeedbackCategories", new { area = "" }, new { @class = "nav-link" })</li>
+                    <li>@Html.ActionLink("Suggestion Box", "Index", "Feedbacks", new { area = "" }, new { @class = "nav-link" })</li>
+
+                </ul>
+
+                @using (Html.BeginForm("Index", "Feedbacks", FormMethod.Get, new
+                {
+                    @class =
+                "zujian"
+                }))
+                {
+                    <div class="form-group">
+                        @Html.TextBox("Search", null, new
+                        {
+                            @class = "change1",
+                            @placeholder =
+                        "Search Suggestion"
+                        })
+                    </div>
+                    <div class="form-group"><button type="submit" class="change">Submit</button></div>
+                }
+                
+
+                <div class="introduce">
+                    <ul>
+                        <li><a href="/Home/ViewPage0">Home</a></li>
+                        <li><a href="/Home/ViewPage1">Traditional Culture</a></li>
+                        <li><a href="/Home/ViewPage2">Natural Scenery</a></li>
+                        <li class="four">@Html.ActionLink(" Suggestion", "Index", "Feedbacks")</li>
+
+                    </ul>
+
+                </div>
+            </div>
+            </div>
+    </nav>
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <div class="introduceL">
+                <p class="intL1">
+                    Producer：YuXin Zhang
+                </p>
+                <p class="intL2">
+                    <a href="tel:XXXXXX">Contact information:XXXXXX</a>
+                </p>
+           
+                <p class="intL3">
+                    <a href="mailto:">E-mail：Have_a_nice_day@qq.com</a>
+                </p>
+            </div>
+            <div class="introduceR">
+                <p class="intR1"><a href="/Home/ViewPage0">Home</a></p>
+                <p class="intR1"><a href="/Home/ViewPage1">Traditional Culture</a></p>
+                <p class="intR1"><a href="/Home/ViewPage2">Natural Scenery</a></p>
+                <p class="intR1">@Html.ActionLink("Suggestion", "Index", "Feedbacks")</p>
+            </div>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+<style>
+    .navbar-brand{
+        margin-left:-10%;
+    }
+    .zujian div {
+        display: inline;
+    }
+    /*页脚*/
+    footer {
+        margin-top: 22.5%;
+        width: 136%;
+        margin-left: -20%;
+        height: 160px;
+        background-color: grey;
+        opacity: 0.8;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .introduceL {
+        line-height: middle;
+        margin-top: 1%;
+        margin-left: -5%;
+        text-decoration:none;
+    }
+
+    .introduceR {
+        line-height: middle;
+        margin-top: 0.5%;
+        margin-right: 2vh;
+        text-decoration: none;
+    }
+
+    .introduceL p {
+        font-weight: 900;
+        color: white;
+        text-decoration: none;
+    }
+
+    .introduceR a {
+        font-weight: 900;
+        color: white;
+        text-decoration: none;
+    }
+
+        .introduceR a:link,
+        introduceR a:visited {
+            color: #FFF;
+            text-decoration: none;
+        }
+
+        .introduceR a:hover {
+            color: #497271;
+        }
+    .introduce{
+        margin-left:15%;
+    }
+    .introduce>ul{
+        
+        list-style:none;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+         
+    }
+    .introduce ul li {
+        
+        font-weight:400;
+        transition:all .5s linear;
+        border-radius:20px;
+        display:inline;
+       color:#497271;
+
+    }
+    .introduce ul li a{
+        color:white;
+        text-decoration:none;
+        padding-left:10px;
+        padding-right:10px;
+    }
+    .introduce ul li:hover {
+        background: #497271;
+        color: #2b1055;
+    }
+    .four {
+        background-color: #497271;
+        border-radius: 20px;
+        padding: 5px 10px;
+    }
+</style>
+</html>

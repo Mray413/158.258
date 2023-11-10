@@ -1,0 +1,254 @@
+﻿@{
+    Layout = "~/Views/Shared/_LayoutPage3.cshtml";
+}
+<body>
+    <!--导航-->
+    <header>
+        <div class="nav-header">
+            <p class="navbar-brand">YI Nationality</p>
+        </div>
+        <ul>
+            <li><a class="one" href="/Home/ViewPage0">Home</a></li>
+            <li><a class="two" href="/Home/ViewPage1"> Traditional Culture</a></li>
+            <li><a class="three" href="/Home/ViewPage2">Natural Scenery</a></li>
+            <li>@Html.ActionLink("Suggestion", "Index", "Feedbacks")</li>
+        </ul>
+    </header>
+    <!--背景-->
+    <div class="background">
+        <img src="~/Content/Images/3/S背景.jpg" alt="">
+    </div>
+    <!--百叶窗-->
+    <ul class="box">
+        <li>
+            <a href="javascript:;" data-tab="tuanshangucun">
+                <img src="~/Content/Images/3/S团扇古村.jpg" alt="">
+            </a>
+            <div class="Text">
+                Tuanshan Ancient Village
+            </div>
+        </li>
+        <li>
+            <a href="javascript:;" data-tab="yizunuli">
+                <img src="~/Content/Images/3/S彝族奴隶博物馆.jpg" alt="">
+            </a>
+            <div class="Text">
+                Yi Slave Society Museum
+            </div>
+        </li>
+        <li>
+            <a href="javascript:;" data-tab="huxizichengcun">
+                <img src="~/Content/Images/3/S泸西子城村.jpg" alt="">
+            </a>
+
+            <div class="Text">
+                Luxi Chengzi Ancient Village
+            </div>
+        </li>
+        <li>
+            <a href="javascript:;" data-tab="bipenggou">
+                <img src="~/Content/Images/3/S美姑-毕棚沟.jpg" alt="">
+            </a>
+            <div class="Text">
+                Bipeng Ravine
+            </div>
+        </li>
+        <li>
+            <a href="javascript:;" data-tab="malilengjiu">
+                <img src="~/Content/Images/3/S马里冷旧.jpg" alt="">
+            </a>
+            <div class="Text">
+                Heizhugou National Forest Park
+            </div>
+        </li>
+    </ul>
+    <div class="welcome">
+        <h1>Welcome to visit the scenery of Yi.</h1>
+    </div>
+    <!--介绍-->
+    <div data-tab="tuanshangucun" class="Introduction1">
+        <div class="introduction1">
+            <p class="Title">
+                Tuanshan Ancient Village
+            </p>
+            <p class="line"></p>
+            <p class="text">
+                &emsp;&emsp;Tuanshan Folk Residences is located on the border of Yunnan, surrounded by green mountain peaks, which is the best
+                background color for the village. It is isolated from the rest of the world. After 600 years of wind and rain, most of
+                the ancient buildings are well preserved and are listed as "World Architectural Heritage". Surrounded by mountains of
+                mountains, the scenery here is perfect for people. Not only can you enjoy the beautiful natural landscape within the
+                village, but you can also choose to explore the nearby natural environment on foot or on foot. Especially in the early
+                morning and dusk, the interplay of light and shadow on the mountain peaks is definitely worth seeing.
+            </p>
+            <!--点赞-->
+        </div>
+        <div class="image1">
+            <img src="~/Content/Images/3/S团扇古村.jpg" alt="" class="info-photo">
+        </div>
+    </div>
+    <div data-tab="yizunuli" class="Introduction2">
+        <div class="introduction2">
+            <p class="Title">
+                Yi Slave Society Museum
+            </p>
+            <p class="line"></p>
+            <p class="text">
+                &emsp;&emsp;There are more than nine million Yi people in China. The museum displays the entire culture of the Yi people, from the
+                origin of the race to social development and national culture, and the introduction is quite detailed. The so-called
+                slave society is just the slave society of the Yi region. It is ruled by classes and develops a whole set of slave
+                society civilization.
+            </p>
+        </div>
+        <div class="image2">
+            <img src="~/Content/Images/3/S彝族奴隶博物馆.jpg" alt="" class="info-photo">
+        </div>
+    </div>
+    <div data-tab="huxizichengcun" class="Introduction3">
+        <div class="introduction3">
+            <p class="Title">
+                Luxi Chengzi Ancient Village
+            </p>
+            <p class="line"></p>
+            <p class="text">
+                &emsp;&emsp;The ancient village is located deep in the mountains 25 kilometers away from Luxi County, Yunnan Province. It has the
+                largest "Yi Tuzhang Fang" building complex in China and is the most unique ancient village landscape in Yunnan that
+                combines Yi and Han people. The special thing about the ancient village is that the thousands of houses in the village
+                are connected to each other and connected to each other. Here there are simple folk customs, simple villages, and simple
+                life without too many modifications. It is the most authentic living condition of the villagers deep in the mountains,
+                quiet and peaceful, and the smoke from cooking continues for generations.
+            </p>
+        </div>
+        <div class="image3">
+            <img src="~/Content/Images/3/S泸西子城村.jpg" alt="" class="info-photo">
+        </div>
+    </div>
+    <div data-tab="bipenggou" class="Introduction4">
+        <div class="introduction4">
+            <p class="Title">
+                Bipeng Ravine
+            </p>
+            <p class="line"></p>
+            <p class="text">
+                &emsp;&emsp;Bipenggou is a paradise located in Sichuan. The autumn colors here are absolutely not to be missed. Every autumn, this
+                place turns into a colorful picture. Golden leaves, red and yellow grass, and blue sky form a beautiful picture. Here,
+                you can take photos as much as you like and record this wonderful time.
+            </p>
+        </div>
+        <div class="image4">
+            <img src="~/Content/Images/3/S美姑-毕棚沟.jpg" alt="晋城概况" class="info-photo">
+        </div>
+    </div>
+    <div data-tab="malilengjiu" class="Introduction5">
+        <div class="introduction5">
+            <p class="Title">
+                Heizhugou National Forest Park
+            </p>
+            <p class="line"></p>
+            <p class="text">
+                &emsp;&emsp;Heizhugou Scenic Area is located in Heizhugou Town, Ebian Yi Autonomous County, Leshan City, Sichuan, with a total area
+                of ​​838 square kilometers and a core scenic area of ​​575 square kilometers. It is a national nature reserve, a
+                national forest park and a national 4A tourist attraction.
+                Heizhugou is the transliteration of Yi. In Yi language, it means "the valley where clouds and mist live and stay for a
+                long time". It is hidden in the high mountains.
+                The mysterious 30° north latitude line runs through it, with diverse landforms, changeable climate, strange geomagnetism
+                and many mysterious legends. The total core area of ​​Heizhugou Scenic Area is 575 square kilometers, with an altitude
+                between 1580-4288 meters.
+            </p>
+        </div>
+        <div class="image5">
+            <img src="~/Content/Images/3/S马里冷旧.jpg" alt="晋城概况" class="info-photo">
+        </div>
+    </div>
+    <!--点赞-->
+    <div class="like1">
+        <p id="tag1">0</p>
+        <button id="like1" onclick="like1()">Likes</button>
+        <script>
+            var love1 = 0;
+            function like1() {
+                love1++;
+                document.getElementById('tag1').innerHTML = love1;
+            }
+        </script>
+    </div>
+    <div class="like2">
+        <p id="tag2">0</p>
+        <button id="like2" onclick="like2()">Likes</button>
+        <script>
+            var love2 = 0;
+            function like2() {
+                love2++;
+                document.getElementById('tag2').innerHTML = love2;
+            }
+        </script>
+    </div>
+    <div class="like3">
+        <p id="tag3">0</p>
+        <button id="like3" onclick="like3()">Likes</button>
+        <script>
+            var love3 = 0;
+            function like3() {
+                love3++;
+                document.getElementById('tag3').innerHTML = love3;
+            }
+        </script>
+    </div>
+    <div class="like4">
+        <p id="tag4">0</p>
+        <button id="like4" onclick="like4()">Likes</button>
+        <script>
+            var love4 = 0;
+            function like4() {
+                love4++;
+                document.getElementById('tag4').innerHTML = love4;
+            }
+        </script>
+    </div>
+    <div class="like5">
+        <p id="tag5">0</p>
+        <button id="like5" onclick="like5()">Likes</button>
+        <script>
+            var love5 = 0;
+            function like5() {
+                love5++;
+                document.getElementById('tag5').innerHTML = love5;
+            }
+        </script>
+    </div>
+
+
+    <!--页脚-->
+    <footer>
+        <div class="introduceL">
+            <p class="intL1">
+                Producer：YuXin Zhang
+            </p>
+            <p class="intL2">
+                <a href="tel:XXXXXX">Contact information:XXXXXX</a>
+            </p>
+            <p class="intL3">
+                <a href="mailto:">E-mail：Have_a_nice_day@qq.com</a>
+            </p>
+        </div>
+        <div class="introduceR">
+            <p class="intR1"><a href="/Home/ViewPage0">Home</a></p>
+            <p class="intR1"><a href="/Home/ViewPage1">Traditional Culture</a></p>
+            <p class="intR1"><a href="/Home/ViewPage2">Natural Scenery</a></p>
+            <p class="intR1">@Html.ActionLink("Suggestion", "Index", "Feedbacks")</p>
+        </div>
+    </footer>
+    <!--点赞-->
+</body>
+<!--跳转-->
+<!--跳转-->
+<script type="text/javascript">
+    document.querySelectorAll('a').forEach(function (el) {
+        el.addEventListener('click', function () {
+            var dHeight = document.documentElement.clientHeight;
+            var target = document.querySelector('div[data-tab=' + this.getAttribute('data-tab') + ']')
+            target.height = dHeight + "px";
+            target.scrollIntoView(false);
+        })
+    })
+</script>
+

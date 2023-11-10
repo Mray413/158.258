@@ -1,0 +1,97 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+    Layout = "~/Views/Shared/_LayoutPage1.cshtml";
+}
+<body>
+    <!--导航-->
+    <header>
+        <div class="nav-header">
+            <p class="navbar-brand">YI Nationality</p>
+        </div>
+        <ul>
+            <li><a class="one" href="/Home/ViewPage0">Home</a></li>
+            <li><a class="two" href="/Home/ViewPage1"> Traditional Culture</a></li>
+            <li><a class="three" href="/Home/ViewPage2">Natural Scenery</a></li>
+            <li>@Html.ActionLink("Suggestion", "Index", "Feedbacks")</li>
+        </ul>
+    </header>
+    <!--视频-->
+    <div class="Introduction">
+        <div class="Wenzi">
+            <h1>YI——<br />&emsp;The sixth largest ethnic minority in China.</h1>
+        </div>
+    </div>
+    <div class="Video">
+        <video src="~/Content/Images/1/Home0.mp4" controls="controls"></video>
+        <figcaption>Promotional video for the Yi people.</figcaption>
+    </div>
+    <div class="main">
+        <div class="Language">
+            <img src="~/Content/Images/1/Home03.jpg" alt="" />
+            <h1>Language</h1>
+            <p>
+                &emsp;&emsp;The writing used by the Yi people is called Yi script. Because the Yi script looks like a tadpole, it is called tadpole
+                script. The differences between Yi scripts in different regions are increasing, and the Liangshan Yi script is currently
+                the most widely used. <br />&emsp;&emsp;According to legend, the creator of the Yi language is a man named Bo Bo Geng. He created the Yi
+                language based on the footprints of birds and animals and the images of things. <br />&emsp;&emsp;Yi language is the language passed down
+                from generation to generation by Bimo (the person who presides over sacrifices and priests) of the Yi ethnic group
+                through writing and genealogy.
+            </p>
+        </div>
+        <div class="Place">
+            <h1>Population Distribution</h1>
+            <p>
+                &emsp;&emsp;As of 2021, the total population of the Yi people is 9,830,327. The Yi population is mainly distributed in the four
+                provinces of Sichuan, Yunnan, Guizhou and Guangxi. Among them, Yunnan is the province with the largest Yi population.
+                Sichuan's Yi population is about 2.12 million, mainly distributed in Liangshan Yi Autonomous Prefecture, Mayi Autonomous
+                County and Ebian Yi Autonomous County. The Yi population in Guizhou is about 700,000. In addition, there are some Yi
+                people scattered throughout the country.
+            </p>
+            <img src="~/Content/Images/1/Home2.jpg" alt="" />
+        </div>
+        <div class="History">
+            <img src="~/Content/Images/1/Home4.jpg" alt="" />
+            <h1>History</h1>
+            <p>
+                &emsp;&emsp;There are various opinions about the historical origin of the Yi people, but there is no conclusion yet. At present,
+                academic circles generally believe that the ancestors of the Yi people are closely related to the ancient Qiang people
+                distributed in western China. This view holds that 6,000-7,000 years ago, the ancient Qiang people who lived in the
+                Hehuang region of northwest China migrated outwards, and some of them settled in the southwest region and continuously
+                integrated with the local people, becoming the ancestors of the Yi people.
+
+            </p>
+        </div>
+    </div>
+    <figure>
+        <div>
+            <img src="~/Content/Images/1/Home01.jpg" alt="" />
+            <img src="~/Content/Images/1/Home02.jpg" alt="" />
+            <img src="~/Content/Images/1/Home03.jpg" alt="" />
+            <img src="~/Content/Images/1/Home04.jpg" alt="" />
+            <img src="~/Content/Images/1/Home05.jpg" alt="" />
+            <img src="~/Content/Images/1/Home06.jpg" alt="" />
+        </div>
+        <figcaption>Pictures of Yi activities.</figcaption>
+    </figure>
+    <!--页脚-->
+    <footer>
+        <div class="introduceL">
+            <p class="intL1">
+                Producer：YuXin Zhang
+            </p>
+            <p class="intL2">
+                <a href="tel:XXXXXX">Contact information:XXXXXX</a>
+            </p>
+
+            <p class="intL3">
+                <a href="mailto:">E-mail：Have_a_nice_day@qq.com</a>
+            </p>
+        </div>
+        <div class="introduceR">
+            <p class="intR1"><a href="/Home/ViewPage0">Home</a></p>
+            <p class="intR1"><a href="/Home/ViewPage1">Traditional Culture</a></p>
+            <p class="intR1"><a href="/Home/ViewPage2">Natural Scenery</a></p>
+            <p class="intR1">@Html.ActionLink("Suggestion", "Index", "Feedbacks")</p>
+        </div>
+    </footer>
+</body>

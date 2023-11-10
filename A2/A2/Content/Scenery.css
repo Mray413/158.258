@@ -1,0 +1,385 @@
+@charset "utf-8";
+
+body {
+    margin: 0 auto;
+    width: 100%;
+    background-color: black;
+}
+
+h1,
+h2,
+p,
+p>a {
+    color: white;
+}
+@font-face {
+    font-family: 'CAC';
+    src: url('font-style/DobkinPlain.ttf') format('truetype');
+}
+body>header>img {
+    width: 100%;
+    display: block;
+    margin: 0;
+}
+
+/*水平导航*/
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 10;
+    padding: 20px 100px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #FFF;
+    overflow: hidden;
+    border-bottom: double white 1px;
+    background-color: rgb(0, 0, 0, 0.5);
+}
+.three{
+    background-color:#497271;
+    border-radius: 20px;
+    padding: 5px 10px;
+}
+.nav-header {
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar-brand {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    font-weight: bold;
+    height: 30px;
+    color: #FFF;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li {
+    font-weight: 400;
+    margin-left: 15px;
+    transition: all .5s linear;
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+
+header ul li:hover {
+    background: #497271;
+    color: #2b1055;
+}
+
+a:link,
+a:visited {
+    color: #FFF;
+    text-decoration: none;
+}
+
+/*背景*/
+.background>img {
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
+}
+/*百叶窗*/
+.box {
+    z-index: 1;
+    width: 1200px;
+    height: 500px;
+    margin: -700px auto;
+    border: 2px solid #497271;
+    overflow: hidden;
+    background-color: #497271;
+    box-shadow: 5px 5px 7px #497271;
+}
+.box li {
+    margin-left: -3.5%;
+    float: left;
+    position: relative;
+    width: 282px;
+    height: 100%;
+    box-shadow: 0 0 25px #000000;
+    transition: all 0.5s;
+}
+.box li .Text {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    font-size: 20px;
+    color: #FFF;
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    line-height: 30px;
+    background: #000;
+    background-color: #497271;
+    opacity: 0.8;
+    font-weight: 500;
+}
+
+.box:hover li {
+    width: 125px;
+}
+    
+.box li:hover {
+    width: 600px;
+}
+/*欢迎*/
+.welcome{
+    font-family: CAC;
+    font-size: 2pc;
+    width: 100%;
+    margin: 45% 28%;
+    font-weight: bolder;
+}
+.welcome>h1{
+    color: whitesmoke;
+}
+
+/*介绍*/
+p.Title {
+    font-size: 25px;
+    padding: 1%;
+    font-weight: bolder;
+}
+p.line {
+    background-color: white;
+    height: 3px;
+    margin: 0 25px;
+    position: relative;
+    top: -5%;
+    width: 53%;
+}
+.text {
+    color: #ccc;
+    line-height: 1.5;
+    font-size: 17px;
+    padding: 0 1%;
+    width: 65%;
+    shape-outside:polygon(1 1,1,1);
+}
+.introduction1{
+    width: 80%;
+    height: 300px;
+    margin: -30% auto;
+    background-color: #497271;
+}
+.image1>img{
+    margin: 8% 63%;
+    width: 25%;
+}
+.Introduction2{
+    margin-top: 35%;
+}
+.introduction2 {
+    width: 80%;
+    height: 300px;
+    margin: -30% auto;
+    background-color: #497271;
+}
+.image2>img {
+    margin: 8% 63%;
+    width: 25%;
+}
+.Introduction3 {
+    margin-top: 35%;
+}
+
+.introduction3 {
+    width: 80%;
+    height: 300px;
+    margin: -30% auto;
+    background-color: #497271;
+}
+
+.image3>img {
+    margin: 8% 63%;
+    width: 25%;
+}
+.Introduction4 {
+    margin-top: 35%;
+}
+
+.introduction4 {
+    width: 80%;
+    height: 300px;
+    margin: -30% auto;
+    background-color: #497271;
+}
+
+.image4>img {
+    margin: 8% 63%;
+    width: 25%;;
+}
+.Introduction5 {
+    margin-top: 35%;
+}
+
+.introduction5 {
+    width: 80%;
+    height:300px;
+    margin: -30% auto;
+    background-color: #497271;
+}
+
+.image5>img {
+    margin: 8% 63%;
+    width: 25%;
+}
+/*点赞*/
+#tag1,#tag2,#tag3,#tag4,#tag5 {
+    display: inline-block;
+}
+.like1{
+    z-index: 999;
+    margin-top: -113.5%;
+    margin-left: 73.2%;
+}
+.like1>button{
+    background-color: pink;
+    width: 4pc;
+    height: 2pc;
+    font-size: larger;
+    font-weight:bold;
+}
+.like1>p{
+    color: pink;
+    margin-right: 1%;
+    font-weight: bold;
+    font-size:xxx-large;
+    -webkit-text-stroke: 1px black;
+}
+.like2 {
+    z-index: 999;
+    margin-top: 17%;
+    margin-left: 73.2%;
+}
+
+.like2>button {
+    background-color: pink;
+    width: 4pc;
+    height: 2pc;
+    font-size: larger;
+    font-weight: bold;
+}
+
+.like2>p {
+    color: pink;
+    margin-right: 1%;
+    font-weight: bold;
+    font-size: xxx-large;
+    -webkit-text-stroke: 1px black;
+}
+.like3 {
+    z-index: 999;
+    margin-top: 16%;
+    margin-left: 73.2%;
+}
+
+.like3>button {
+    background-color: pink;
+    width: 4pc;
+    height: 2pc;
+    font-size: larger;
+    font-weight: bold;
+}
+
+.like3>p {
+    color: pink;
+    margin-right: 1%;
+    font-weight: bold;
+    font-size: xxx-large;
+    -webkit-text-stroke: 1px black;
+}
+.like4 {
+    z-index: 999;
+    margin-top: 16%;
+    margin-left: 73.2%;
+}
+
+.like4>button {
+    background-color: pink;
+    width: 4pc;
+    height: 2pc;
+    font-size: larger;
+    font-weight: bold;
+}
+
+.like4>p {
+    color: pink;
+    margin-right: 1%;
+    font-weight: bold;
+    font-size: xxx-large;
+    -webkit-text-stroke: 1px black;
+}
+.like5 {
+    z-index: 999;
+    margin-top: 16%;
+    margin-left: 73.2%;
+}
+
+.like5>button {
+    background-color: pink;
+    width: 4pc;
+    height: 2pc;
+    font-size: larger;
+    font-weight: bold;
+}
+
+.like5>p {
+    color: pink;
+    margin-right: 1%;
+    font-weight: bold;
+    font-size: xxx-large;
+    -webkit-text-stroke: 1px black;
+}
+/*页脚*/
+footer {
+    margin-top: 5%;
+    height: 160px;
+    background-color: grey;
+    opacity: 0.8;
+    display: flex;
+    justify-content: space-around;
+}
+
+.introduceL {
+    line-height: middle;
+    margin-top: 1%;
+    margin-left: -16vw;
+}
+
+.introduceR {
+    line-height: middle;
+    margin-top: -0.2%;
+    margin-right: 2vh;
+    text-decoration: none;
+}
+
+.introduceL p {
+    font-weight: 900;
+    color: white;
+}
+
+.introduceR a {
+    font-weight: 900;
+    color: white;
+}
+
+.introduceR a:link,introduceR a:visited {
+    color: #FFF;
+    text-decoration: none;
+}
+
+.introduceR a:hover {
+    color: #497271;
+}
